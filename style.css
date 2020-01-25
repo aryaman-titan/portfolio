@@ -41,19 +41,20 @@ height: 50vh;
 }
 
 #chevron{
-  width: 10vw;
-  height: 10vw;
+  width: 5vw;
+  height: 5vw;
 }
 
 #chevron-upside{
-  width: 10vw;
-  height: 10vw;
+  width: 5vw;
+  height: 5vw;
   transform: rotateX(0.5turn);
 }
 
 
 .navbar{
   height: 70px;
+  width: 100%;
   background-color: transparent;
   background: transparent;
   border: none;
@@ -64,6 +65,32 @@ height: 50vh;
   -webkit-transition: background-color 1s ease 0s;
   transition: background-color 1s ease 0s;
   display: block;
+  position: fixed;
+}
+
+.scrollButton{
+  display: flex;
+  align-content: flex-start;
+}
+
+.row{
+  width: 100vw;
+}
+
+.header{
+  width: 100%;
+  text-align: center;
+}
+
+.logos{
+  display: flex;
+  overflow: hidden;
+  height: fit-content;
+  justify-content: center;
+  }
+
+.vl{
+  border-left: 2px white solid;
 }
 
 .flex-des{
@@ -73,12 +100,22 @@ height: 50vh;
   justify-content: center;
 }
 
-#mainDP{
+#mainDP,.logoDP{
     border-radius: 50%; 
     width: 15vw;
      height: 15vw; 
      border: 2px solid white;
      animation: bounceIn 1.8s;
+}
+
+
+
+.desc{
+  display:flex;
+width: 60vw;;
+  justify-content: center; 
+  font-size: 28px;
+   color: white ;
 }
 #mainDP:hover{
   width: 15vw;
@@ -92,5 +129,23 @@ height: 50vh;
   #mainDP{
     width: 40vw;
     height: 40vw; 
+  }
+  #chevron{
+    width: 10vw;
+    height: 10vw;
+  }
+  
+  #chevron-upside{
+    width: 10vw;
+    height: 10vw;
+    transform: rotateX(0.5turn);
+  }
+  .desc{
+    font-size: 16px;
+    width: 90vw;
+  }
+  .logoDP{
+    width:40vw;
+    height: 40vw;
   }
 }
